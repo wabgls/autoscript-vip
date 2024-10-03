@@ -18,8 +18,8 @@ checking_sc() {
     echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
     echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "         \033[0;36mTelegram${NC} t.me/masansor"
-    echo -e "      ${GREEN}WhatsApp${NC} wa.me/+6281775700114"
+    echo -e "         \033[0;36mTelegram${NC} t.me/BogelStore1"
+    echo -e "      ${GREEN}WhatsApp${NC} wa.me/6281917110387"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 read -n 1 -s -r -p "  Press any key to back on menu"
 menu
@@ -50,9 +50,9 @@ BGX="\033[42m"
 END='\e[0m'
 AKTIF="VERIFIED"
 TOKEN=$(cat /etc/github/api)
-REPO="https://github.com/king-vpn/permission.git"
+REPO="https://github.com/wabgls/permission.git"
 EMAIL=$(cat /etc/github/email)
-USER="king-vpn"
+USER="wabgls"
 
 
 add-ip() {
@@ -74,7 +74,7 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
     exit 0
     fi
     echo -e ""
-    read -p "Username (Contoh : Tunnel-Stores) : " name
+    read -p "Username (Contoh : Bogel-Store) : " name
     echo -e ""
     clear
     echo -e ""
@@ -115,8 +115,8 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/king-vpn/permission
-    git push -f https://${TOKEN}@github.com/king-vpn/permission.git &> /dev/null
+    git remote add origin https://github.com/wabgls/permission
+    git push -f https://${TOKEN}@github.com/wabgls/permission.git &> /dev/null
     rm -rf /root/ipvps
     clear
     sleep 1
